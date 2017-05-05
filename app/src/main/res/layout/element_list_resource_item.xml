@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/corner_radius"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/resource_background_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/title_text_view"
+            style="@style/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/resource_background_image_view"
+            android:background="@color/colorBlackTransparent"
+            android:padding="@dimen/default_margin_value"
+            android:textSize="16sp"
+            tools:text="Resource 1 (pdf, 10 kb, 5 comments)" />
+
+        <TextView
+            android:id="@+id/professor_text_view"
+            style="@style/CardViewText"
+            android:layout_below="@id/resource_background_image_view"
+            tools:text="Professor: Ion Ionescu" />
+
+        <TextView
+            android:id="@+id/details_text_view"
+            style="@style/CardViewText"
+            android:layout_below="@id/professor_text_view"
+            tools:text="Details: taken in overdue session, but never seen into an actual session" />
+
+        <TextView
+            android:id="@+id/author_text_view"
+            style="@style/CardViewText"
+            android:layout_below="@+id/details_text_view"
+            tools:text="Submitted by: anonymous" />
+
+        <TextView
+            android:id="@+id/share_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/author_text_view"
+            android:padding="@dimen/default_margin_value"
+            android:text="@string/share"
+            android:textColor="@color/colorGrayDark"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/save_offline_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/author_text_view"
+            android:layout_toEndOf="@+id/share_text_view"
+            android:padding="@dimen/default_margin_value"
+            android:text="@string/save_offline"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

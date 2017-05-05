@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    android:background="@color/colorGrayLight"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/x_small_margin">
+
+    <TextView
+        android:id="@+id/choose_university_text_view"
+        style="@style/SelectionButton"
+        android:hint="@string/choose_university" />
+
+    <TextView
+        android:id="@+id/choose_faculty_text_view"
+        style="@style/SelectionButton"
+        android:hint="@string/choose_faculty" />
+
+    <TextView
+        android:id="@+id/choose_subject_text_view"
+        style="@style/SelectionButton"
+        android:hint="@string/choose_subject" />
+
+    <TextView
+        android:id="@+id/search_resources"
+        style="@style/SelectionButton"
+        android:background="@drawable/round_corner_background_primary_dark"
+        android:text="@string/search_resources" />
+
+    <TextView
+        android:id="@+id/contribute_button"
+        style="@style/SelectionButton"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_corner_background_accent"
+        android:text="@string/contribute_button" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/x_small_margin"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_search"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_item_explore" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_recent_history"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_item_new" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_myplaces"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_item_profile" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_info_details"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_item_about" />
+    </LinearLayout>
+</LinearLayout>

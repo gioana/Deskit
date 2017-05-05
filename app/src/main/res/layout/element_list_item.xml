@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        style="@style/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="@dimen/default_margin_value"
+        tools:text="Universitatea Babes Bolyai" />
+
+    <TextView
+        android:id="@+id/subtitle_text_view"
+        style="@style/TextView"
+        android:paddingLeft="@dimen/default_margin_value"
+        android:paddingRight="@dimen/default_margin_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Cluj-Napoca" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhiteTransparent" />
+</LinearLayout>

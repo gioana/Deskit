@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Deskit</string>
+    <string name="server_client_id">235977486268-0cot91sbb3bpqfdblgks54c8j95t1v2b.apps.googleusercontent.com</string>
+    <string name="choose_university">Choose university</string>
+    <string name="choose_faculty">Choose faculty</string>
+    <string name="choose_subject">Choose subject</string>
+    <string name="search_resources">Search resources</string>
+    <string name="contribute_button">I want to contribute</string>
+    <string name="menu_item_explore">Explore</string>
+    <string name="menu_item_new">New</string>
+    <string name="menu_item_profile">Profile</string>
+    <string name="menu_item_about">About</string>
+    <string name="save_offline">Save offline</string>
+    <string name="share">Share</string>
+</resources>
