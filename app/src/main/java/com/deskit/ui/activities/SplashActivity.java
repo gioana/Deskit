@@ -13,8 +13,6 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FileDownloadTask;
 
-import java.io.IOException;
-
 public class SplashActivity extends Activity implements OnSuccessListener<FileDownloadTask.TaskSnapshot>, OnFailureListener {
 
     private static final String TAG = "SplashActivity";
@@ -25,12 +23,8 @@ public class SplashActivity extends Activity implements OnSuccessListener<FileDo
 
         setContentView(R.layout.activity_splash);
 
-        try {
-            if (DatabaseHelper.getInstance(getApplicationContext()).createDataBase(this, this)) {
-                openMainActivity();
-            }
-        } catch (IOException e) {
-            closeApp();
+        if (DatabaseHelper.getInstance(getApplicationContext()).createDataBase(this, this)) {
+            openMainActivity();
         }
     }
 
